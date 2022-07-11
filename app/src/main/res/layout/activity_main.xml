@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/linearLayoutCompat">
+        <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/viewTV"
+                style="@style/textnumber">
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textnumber"
+                android:id="@+id/resultTV">
+        </androidx.appcompat.widget.AppCompatTextView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:textColor="#f00"
+                    android:onClick="clearAllnumber"
+                    android:textStyle="bold"
+                     android:text = "AC"
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:textColor="#f00"
+                    android:onClick="clearnumberlength"
+                    android:text="⌫"
+            />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:textColor="#FF9800"
+                    android:paddingLeft="100dp"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:text="/"
+            />
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:text="7"
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:text="8"
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:text="9"
+
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:textColor="#FF9800"
+                    android:text="*"
+            />
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:text="4"
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:text="5"
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:text="6"
+
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:textColor="#FF9800"
+                    android:text="+"
+            />
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:text="1"
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+
+                    android:text="2"
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:text="3"
+
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:textColor="#FF9800"
+                   android:text="-"
+            />
+        </TableRow>
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:text="0"
+            />
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:text="."
+            />
+
+            <androidx.appcompat.widget.AppCompatButton
+                    style="@style/buttonNumber"
+                    android:layout_weight="2"
+                    android:background="#FF9800"
+                    android:onClick="equasResult"
+                    android:textStyle="bold"
+                    android:text="="
+            />
+        </TableRow>
+
+    </TableLayout>
+    
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
